@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<title>CSS Tabs</title>
+<!-- Place favicon.ico in the root directory -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="./css/reset.css">
+
+<style>
+
+body { 
+	padding: 20px;
+}
+
+.tabs {
+	margin: 0 auto;
+	height: 400px;
+	width: 600px;
+	list-style: none;
+	position: relative;
+}
+.tabs li { float: left; }
+.tabs label {
+	margin-right: 15px;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #c5c5c5;
+	border: 1px solid #000;
+	border-bottom: 0 none;
+	display: block;
+	position: relative;
+	
+	z-index: 1;
+}
+.tabs li > [type="radio"] { display: none; }
+
+.tabs li > [type="radio"]:checked + label,
+.tabs .content {
+	color: #444;
+	background-color: #EFEFEF;
+}
+
+.tabs .content {
+	padding: 10px;
+	border: 1px solid #000;
+	line-height: 1.5em;
+	display: none;
+	overflow: auto;
+	position: absolute;
+	z-index: 2;
+	top: 34px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.tabs li > [type="radio"]:checked + label + .content { 
+	display: block; 
+}
+
+.tabs li > [type="radio"]:checked + label {
+	z-index: 3;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="tabs">
+	<li>
+		<input type="radio" name="tab" id="tab-1" checked="checked" />
+		<label for="tab-1">Tab 1</label>
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque, tortor ac viverra commodo, urna magna hendrerit lorem, non gravida eros purus sed ligula. Curabitur porttitor vel erat eu facilisis. Phasellus condimentum elit quis ipsum auctor volutpat. Etiam neque diam, elementum eget volutpat sed, vehicula in lacus. Suspendisse commodo, massa in facilisis cursus, turpis elit varius neque, sit amet tincidunt neque odio nec erat. Morbi at massa sit amet ligula congue feugiat ut sit amet turpis. Ut ante mi, placerat eu pretium sed, ultrices et arcu. Donec aliquam massa ipsum, sit amet accumsan nulla gravida et. Maecenas a leo elit. Sed egestas libero eget mauris imperdiet, id aliquet mauris eleifend. Quisque vel nunc et purus eleifend pulvinar. 
+		</div>
+	</li>
+  
+	<li>
+		<input type="radio" name="tab" id="tab-2" />
+		<label for="tab-2">Tab 2</label>
+		<div class="content">
+			Quisque in mattis eros. Maecenas maximus, odio elementum gravida viverra, sem quam mollis ligula, sit amet finibus eros nisi a orci. In risus orci, sagittis ultrices odio ac, fermentum condimentum erat. Morbi eu velit accumsan, consectetur elit non, aliquam nulla. Donec non mattis ex. Nulla facilisi. Etiam accumsan justo vitae libero hendrerit viverra. Duis rutrum massa quis euismod dignissim. Cras ultrices sed elit vitae dignissim. In vehicula tempor sem vitae sollicitudin.
+		</div>
+	</li>
+  
+	<li>
+		<input type="radio" name="tab" id="tab-3" />
+		<label for="tab-3">Tab 3</label>
+		<div class="content">
+			Integer eget nibh eget arcu varius tristique quis non nisi. Aliquam erat volutpat. Morbi eget lacus ac elit placerat tempus. Ut tincidunt ac sem vitae facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vehicula, nisl ac ultricies pellentesque, nulla magna consectetur erat, at faucibus ligula arcu eu lorem.
+		</div>
+	</li>
+</ul>
+
+</body>
+</html>

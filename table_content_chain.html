@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<title>Table of Content Chains</title>
+<!-- Place favicon.ico in the root directory -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="./css/reset.css">
+
+<style>
+
+body { 
+	padding: 50px;
+	font: normal 67.5% Verdana, Geneva, sans-serif;
+	line-height: 1.2em;
+}
+
+.table-contents {
+	margin: 20px;
+	display: inline-block;
+	position: relative;
+}
+.table-contents:before {
+	content: '';
+	width: 3px;
+	background: #078CC8;
+	display: block;
+	position: absolute;
+	top: 5px; bottom: 5px;
+	left: 49%;
+
+	-webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.table-contents li {
+	width: 180px;
+	margin-top: 12px;
+	padding: 5px 8px;
+	font: normal 1.5em "Alegreya Sans";
+	color: #0080B2;
+	text-align: center;
+	border: 4px solid #88BBE8;
+	background: #FBFBFB;
+	cursor: pointer;
+	position: relative;
+	z-index: 50;
+
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.table-contents li:first-child { 
+	margin-top: 0; 
+}
+
+.table-contents .active {
+	color: #C1423D;
+	border-color: #C599A3;
+}
+
+li:hover:not(.active) {
+	color: #003C6D;
+	background-color: #CCE7F3;
+	border-color: #078CC8;
+
+	-webkit-box-shadow: 0 0 3px #3299BB;
+	box-shadow: 0 0 3px #3299BB;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="table-contents">
+	<li class="active">Chronology</li>
+	<li>Name and etymology</li>
+	<li>Composition and structure</li>
+	<li>Orbit and rotation</li>
+	<li>Habitability</li>
+	<li>Moon</li>
+	<li>Asteroids and artificial satellites</li>
+	<li>Cultural and historical viewpoint</li>
+	<li>Reference</li>
+</ul>
+
+</body>
+</html>

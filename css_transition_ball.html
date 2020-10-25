@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<title>CSS Transition Ball</title>
+<!-- Place favicon.ico in the root directory -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="./css/reset.css">
+
+<style>
+
+body { 
+	padding: 50px;
+	font: normal 67.5% Verdana, Geneva, sans-serif;
+	line-height: 1.2em;
+}
+
+.circle {
+	margin-right: 30px;
+	height: 100px;
+	width: 100px;
+	position: relative;
+	border: 0 solid white;
+	display: inline-block;
+
+	border-radius: 100px;
+	transition-property: border, background;
+	transition-duration: 0.5s;
+
+	box-sizing  
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.circle.red {
+	background-color: #a13939;
+	border-color: #a13939;
+}
+
+.circle.blue {
+	background-color: #29A5BC;
+	border-color: #29A5BC;
+}
+
+.circle.green {
+	background-color: #acbd86;
+	border-color: #acbd86;
+}
+
+.circle.yellow {
+	background-color: #ffc97c;
+	border-color: #ffc97c;
+}
+
+.circle:hover {
+	border-width: 8px;
+	background-color: #ECF0F1;
+}
+
+.circle:after {
+	content: " ";
+	background-color: #ECF0F1;
+	display: block;
+	position: absolute;
+	top: 0; bottom: 0; 
+	left: 0; right: 0;
+	z-index: -1;
+	
+	border-radius: inherit;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="circle red"></div>
+<div class="circle blue"></div>
+<div class="circle green"></div>
+<div class="circle yellow"></div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: "OpenSans-Bold.ttf";
+	src: url(../fonts/OpenSans-Bold.ttf.ttf);
+}
+
+body {
+	font-family: OpenSans-Regular, Arial, sans-serif;
+	font-size: 16px;
+	color: #444;
+	background-color: #f7f7f7;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+.content_width {
+	width: 86%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+a {
+	color: #764abc;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #A48FD8;
+}
+
+/* Site Topbar */
+#sitetopbar {
+	padding: 4px 0 8px;
+	background-color: #052638;
+}
+
+.social_icons {
+	float: right;
+}
+
+.social_icons li {
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.social_icons a {
+	font-size: 0.8em;
+	color: #ffcdab;
+}
+
+.social_icons a:hover {
+	color: #fff4e3;
+}
+
+#masthead {
+	width: 100%;
+	height: 600px;
+	background-color: #06283F;
+	position: relative;
+	overflow: hidden;
+}
+
+.bgimg {
+	width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 0;
+}
+
+#logo {
+	width: 500px;
+	margin: 60px auto 0;
+	padding: 30px 40px;
+	border: 5px solid #f1e9e3;
+	text-align: center;
+	position: relative;
+}
+
+#logo h1 > span {
+	font-size: 0;
+	height: 0;
+}
+
+#logo p {
+	padding: 4px 10px;
+	text-align: center;
+	color: #E6E6E6;
+	font-family: OpenSans-Bold, Arial, sans-serif;
+	font-weight: bold;
+	background-color: #06283F;
+	/*background-color: #f1e9e3;*/
+	position: absolute;
+	bottom: -14px;
+	left: 28%;
+}
+
+/* Main Navigation */
+#mainnav {
+	width: 800px;
+	margin: 70px auto;
+	text-align: center;
+}
+#mainnav li {
+	width: 100px;
+	padding: 4px 0;
+	text-align: center;
+	border-left: 1px solid #777;
+	display: inline-block;
+}
+
+#mainnav li:first-child {
+	border: none;
+}
+
+#mainnav a {
+	color: #CDCDCD;
+}
+
+#mainnav a:hover {
+	color: #E9E9E9;
+}
+
+#herobox {
+	margin-top: 150px;
+	/*height: 400px;*/
+	background-color: #913535;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
